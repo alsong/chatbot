@@ -120,7 +120,7 @@ const callSendAPI = (sender_psid, response) =>{
         "qs" : { 
             "access_token" : process.env.PAGE_ACCESS_TOKEN
         },
-        "method": POST,
+        "method": "POST",
         "json": request_body
     },(err,res,body) =>{
         if(!err){

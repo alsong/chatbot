@@ -11,7 +11,7 @@ const express = require('express'),
 app.listen(process.env.PORT || 1337, () => console.log('webhook is listening'));
 
 //page access token
-const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
+const PAGE_ACCESS_TOKEN = "EAARwivZAmUhcBANZCoNTNwEoml8GqJZC6eyB2twN1cm8WEQTrXH428C0XZBZCFFmy4sni51VDkDhCOVknucPZAys9yRqeLZADGtX1fwiqyZAyQgIgQ7P4ETQC3XpPpCcsE8csOvSxBoBGoy7n107F3bEAESqVGzqBMCh1AZAEghXe3wZDZD";
 
 //creates the endpoint for our webhook
 app.post('/webhook', (req,res) =>{
@@ -118,7 +118,7 @@ const callSendAPI = (sender_psid, response) =>{
     request({
         "uri": "https://graph.facebook.com/v2.6/me/messages",
         "qs" : { 
-            "access_token" : process.env.PAGE_ACCESS_TOKEN
+            "access_token" : PAGE_ACCESS_TOKEN
         },
         "method": "POST",
         "json": request_body

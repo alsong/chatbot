@@ -120,7 +120,8 @@ const callSendAPI = (sender_psid, response) =>{
         "qs" : { 
             "access_token" : process.env.PAGE_ACCESS_TOKEN
         },
-        "method": request_body
+        "method": POST,
+        "json": request_body
     },(err,res,body) =>{
         if(!err){
             console.log('message sent')

@@ -1,20 +1,17 @@
 {
-  "name": "messenger-webhook",
+  "name": "chatbot",
   "version": "1.0.0",
-  "description": "Messenger webhook",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "alsong",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "request": "^2.88.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.2"
   }
 }
